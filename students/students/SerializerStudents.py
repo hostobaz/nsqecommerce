@@ -8,5 +8,3 @@ class StudentSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Students
         fields = ['url', 'firstname','lastname','school']
-
-

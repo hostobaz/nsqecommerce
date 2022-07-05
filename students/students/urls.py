@@ -2,7 +2,7 @@
 from django.urls import path
 
 # views
-from .ViewStudents import ViewStudents
+from students.ViewStudents import ViewStudents
 
 # as views
 as_view_students_list = ViewStudents.as_view({

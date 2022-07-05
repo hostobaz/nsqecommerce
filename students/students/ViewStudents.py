@@ -1,7 +1,9 @@
 # modules
-from rest_framework import viewsets, permissions
+from rest_framework import viewsets, permissions, status
+from rest_framework.response import Response
 
 # models
+from schools.models import Schools
 from students.models import Students
 
 # serializer student

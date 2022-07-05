@@ -2,9 +2,8 @@
 from django.urls import path
 
 # views
-from .ViewSchools import ViewSchools
+from schools.ViewSchools import ViewSchools, ViewStudentCreate
 from students.ViewStudents import ViewStudents
-
 # as views
 as_view_schools_list = ViewSchools.as_view({
     'get': 'list',
@@ -19,7 +18,7 @@ as_view_schools_detail = ViewSchools.as_view({
 })
 
 # as view for nested rout
-as_view_schools_custom = ViewSchools.as_view({
+as_view_schools_custom = ViewStudentCreate.as_view({
     'get': 'students_in_school',
     'post': 'students_in_school_create'
 })
